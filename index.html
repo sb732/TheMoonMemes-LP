@@ -18,7 +18,7 @@
   style="background-color: black; background-image: url('./assets/background.png'); background-repeat: repeat-y; background-size: 100vw auto;"
   class="font-['Knewave']">
   <section class="relative flex flex-col text-white w-full bg-black mb-14">
-    <div class="absolute w-full hidden md:flex md:flex-row justify-around items-center text-2xl my-4">
+    <div class="z-[10000] fixed bg-black w-full hidden md:flex md:flex-row justify-around items-center text-2xl py-4">
       <a href="#">
         <img src="./assets/header.png" />
       </a>
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div
-      class="absolute w-[calc(100%-16px)] flex md:hidden md:flex-row justify-between items-center text-2xl mx-2 mt-4">
+      class="z-[10000] fixed bg-black w-full flex md:hidden md:flex-row justify-between items-center text-2xl px-2 py-4">
       <div class="flex">
         <img src="./assets/icons/hamburger.svg" id="navToggleIcon" onclick="showNav()" class="w-10 h-10 mr-5" />
         <img src="./assets/header.png" class="w-[40px] h-[40px]" />
@@ -59,7 +59,7 @@
     </div>
 
     <div id="navBar"
-      class="flex items-center w-full justify-center duration-300 flex-col gap-[30px] fixed top-0 -left-full bg-Ivory h-screen z-50 bg-black md:hidden">
+      class="z-[10001] flex items-center w-full justify-center duration-300 flex-col gap-[30px] fixed top-0 -left-full bg-Ivory h-screen z-50 bg-black md:hidden">
       <img src="./assets/icons/menu-cross.svg" id="navToggleIcon" onclick="showNav()"
         class="w-10 h-10 absolute top-4 right-4" />
       <a href="#home">

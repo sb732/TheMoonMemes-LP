@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>TheMoonMemes | Buy & Stake $TMM to Earn Meme Coin</title>
+  <meta name="title" content="TheMoonMemes | Buy & Stake $TMM to Earn Meme Coin">
+
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +20,12 @@
 <body
   style="background-color: black; background-image: url('./assets/background.png'); background-repeat: repeat-y; background-size: 100vw auto;"
   class="font-['Knewave']">
-  <section class="relative flex flex-col text-white w-full bg-black mb-14">
+  <section class="relative flex flex-col text-white w-full bg-black">
     <div class="z-[10000] fixed bg-black w-full hidden md:flex md:flex-row justify-around items-center text-2xl py-4">
       <a href="#">
         <img src="./assets/header.png" />
       </a>
-      <a href="#home">
+      <a href="#staking">
         <p>Home</p>
       </a>
       <a href="#about">
@@ -62,7 +65,7 @@
       class="z-[10001] flex items-center w-full justify-center duration-300 flex-col gap-[30px] fixed top-0 -left-full bg-Ivory h-screen z-50 bg-black md:hidden">
       <img src="./assets/icons/menu-cross.svg" id="navToggleIcon" onclick="showNav()"
         class="w-10 h-10 absolute top-4 right-4" />
-      <a href="#home">
+      <a href="#staking">
         <p onclick="showNav()">Home</p>
       </a>
       <a href="#about">
@@ -88,12 +91,12 @@
       </div>
     </div>
 
-    <img src="./assets/home.png" class="w-auto md:h-[calc(100vh+40px)] mt-[60px] md:mt-[-40px]" />
+    <img src="./assets/home.png" class="w-auto md:h-[calc(100vh-84px)] mt-[60px] md:mt-[84px]" />
   </section>
 
-  <div class="flex flex-col items-center justify-center gap-14 mx-2 lg:mx-0">
-    <div class="flex flex-col items-center justify-center gap-14 max-w-[1040px] text-white">
-      <section class="flex flex-col gap-5 items-center justify-center max-w-[732px]" id="home">
+  <div class="flex flex-col items-center justify-center mx-2 lg:mx-0">
+    <div class="flex flex-col items-center justify-center max-w-[1040px] text-white">
+      <section class="flex flex-col gap-5 items-center justify-center max-w-[732px] pt-[72px] md:pt-[124px]" id="home">
         <p class="text-4xl text-center uppercase">
           Memes on the Rise,<br class="block md:hidden" /> to the Moon We Fly
         </p>
@@ -117,7 +120,7 @@
         <img src="./assets/the-moon-memes-1.png" />
       </section>
 
-      <section class="flex flex-col items-center gap-5" id="about">
+      <section class="flex flex-col items-center gap-5 pt-[72px] md:pt-[124px]" id="about">
         <p
           class="w-full md:w-auto text-6xl md:text-8xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover md:py-5 md:px-[200px]">
           About
@@ -154,7 +157,7 @@
         </div>
       </section>
 
-      <section class="flex flex-col items-center gap-5 mt-[-56px]">
+      <section class="flex flex-col items-center gap-5 mt-[-56px] pt-[72px] md:pt-[124px]">
         <p
           class="text-4xl md:text-6xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-5 md:py-10 md:px-20">
           Why TheMoonMemes?
@@ -202,7 +205,7 @@
         </div>
       </section>
 
-      <section class="flex flex-col items-center gap-5">
+      <section class="flex flex-col items-center gap-5 pt-[72px] md:pt-[124px]" id="mission">
         <p
           class="text-4xl md:text-6xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-5 md:py-10 md:px-20">
           Our Mission and Vision​
@@ -270,44 +273,46 @@
         </div>
       </section>
 
-      <section
-        class="border border-[3px] border-white rounded-2xl px-2 md:px-10 py-1 md:py-5 flex flex-col items-center gap-5 md:gap-10">
-        <p class="uppercase text-3xl md:text-6xl">Staking and Rewards</p>
-        <p class="text-center">
-          Stake Your Tokens, Reap the Benefits:<br />
-          At TheMoonMemes, we offer a robust staking system that allows our community members to earn rewards. By
-          staking your tokens, you can participate in securing the network and earn additional tokens as a reward.
-        </p>
-        <div class="w-full">
-          <p class="text-3xl mb-2">How It Works:</p>
-          <li>
-            Stake Your Tokens: Simply deposit your TheMoonMemes tokens into our staking platform.
-          </li>
-          <li>
-            Earn Rewards: As a staker, you will receive a share of the network’s transaction fees and newly minted
-            tokens.
-          </li>
-          <li>
-            Community Growth: Your participation helps grow and secure our community, making it stronger and more
-            resilient.
-          </li>
+      <section class="pt-[72px] md:pt-[124px]" id="staking">
+        <div
+          class="border border-[3px] border-white rounded-2xl px-2 md:px-10 py-1 md:py-5 flex flex-col items-center gap-5 md:gap-10">
+          <p class="uppercase text-3xl md:text-6xl">Staking and Rewards</p>
+          <p class="text-center">
+            Stake Your Tokens, Reap the Benefits:<br />
+            At TheMoonMemes, we offer a robust staking system that allows our community members to earn rewards. By
+            staking your tokens, you can participate in securing the network and earn additional tokens as a reward.
+          </p>
+          <div class="w-full">
+            <p class="text-3xl mb-2">How It Works:</p>
+            <li>
+              Stake Your Tokens: Simply deposit your TheMoonMemes tokens into our staking platform.
+            </li>
+            <li>
+              Earn Rewards: As a staker, you will receive a share of the network’s transaction fees and newly minted
+              tokens.
+            </li>
+            <li>
+              Community Growth: Your participation helps grow and secure our community, making it stronger and more
+              resilient.
+            </li>
+          </div>
+          <div class="w-full">
+            <p class="text-3xl mb-2">Why Stake with TheMoonMemes?</p>
+            <li>
+              Passive Income: Earn regular rewards by staking your tokens.
+            </li>
+            <li>
+              Support the Network: Your staked tokens contribute to the stability and security of our network.
+            </li>
+            <li>
+              Exclusive Benefits: Stakers get access to exclusive community events, NFT drops, and more.
+            </li>
+          </div>
+          <img src="./assets/staking-and-rewards.png" />
         </div>
-        <div class="w-full">
-          <p class="text-3xl mb-2">Why Stake with TheMoonMemes?</p>
-          <li>
-            Passive Income: Earn regular rewards by staking your tokens.
-          </li>
-          <li>
-            Support the Network: Your staked tokens contribute to the stability and security of our network.
-          </li>
-          <li>
-            Exclusive Benefits: Stakers get access to exclusive community events, NFT drops, and more.
-          </li>
-        </div>
-        <img src="./assets/staking-and-rewards.png" />
       </section>
 
-      <section id="moonomics" class="flex flex-col gap-2 md:gap-5 items-center justify-center">
+      <section id="moonomics" class="flex flex-col gap-2 md:gap-5 items-center justify-center pt-[72px] md:pt-[124px]">
         <p
           class="w-full md:w-auto uppercase text-4xl md:text-6xl text-center mb-5 bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-2 md:py-5 md:px-20">
           Moonomics
@@ -352,7 +357,7 @@
         </div>
       </section>
 
-      <section class="text-xl w-full flex items-stretch" id="roadmap">
+      <section class="text-xl w-full flex items-stretch pt-[72px] md:pt-[124px]" id="roadmap">
         <div
           style="background-image: url('./assets/roadmap-vertical.png'); background-repeat: repeat-y; background-size: 153px auto;"
           class="min-w-[153px] hidden lg:block"></div>
@@ -429,7 +434,7 @@
           class="min-w-[153px] hidden lg:block"></div>
       </section>
 
-      <section class="flex flex-col items-center gap-5 md:gap-10" id="buy">
+      <section class="flex flex-col items-center gap-5 md:gap-10 pt-[72px] md:pt-[124px]" id="buy">
         <p
           class="w-full md:w-auto text-6xl md:text-8xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-2 md:py-10 md:px-32">
           How to buy</p>
@@ -462,7 +467,7 @@
 
       </section>
 
-      <section class="flex flex-col gap-10">
+      <section class="flex flex-col gap-10 pt-[72px] md:pt-[124px]">
         <p class="text-center text-4xl rounded-lg border-4 py-5">Frequently Asked Questions (FAQs)</p>
         <div class="md:text-4xl">
           <div class="relative mb-3">
@@ -542,7 +547,7 @@
       </section>
     </div>
 
-    <section class="flex flex-col items-center gap-10 w-full text-white">
+    <section class="flex flex-col items-center gap-10 w-full text-white pt-[72px] md:pt-[124px]">
       <p
         class="w-full md:w-auto text-4xl md:text-8xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-5 lg:py-10 lg:px-32">
         TheMoonMemes
@@ -558,22 +563,22 @@
             </div>
             <div class="flex justify-around underline gap-5 md:gap-10">
               <div class="hidden md:block">
-                <a href="#">
+                <a href="#staking">
                   <p>Home</p>
                 </a>
-                <a href="#">
+                <a href="#about">
                   <p>About</p>
                 </a>
-                <a href="#">
+                <a href="#mission">
                   <p>Mission & Vision</p>
                 </a>
-                <a href="#">
+                <a href="#moonomics">
                   <p>Moonomics</p>
                 </a>
-                <a href="#">
+                <a href="#roadmap">
                   <p>Roadmap</p>
                 </a>
-                <a href="#">
+                <a href="#buy">
                   <p>How to buy</p>
                 </a>
               </div>
@@ -586,24 +591,24 @@
                 </a>
               </div>
               <div class="block md:hidden">
-                <a href="#">
+                <a href="#staking">
                   <p>Home</p>
                 </a>
-                <a href="#">
+                <a href="#about">
                   <p>About</p>
                 </a>
-                <a href="#">
+                <a href="#mission">
                   <p>Mission & Vision</p>
                 </a>
-                <a href="#">
+                <a href="#moonomics">
                   <p>Moonomics</p>
                 </a>
               </div>
               <div class="block md:hidden">
-                <a href="#">
+                <a href="#roadmap">
                   <p>Roadmap</p>
                 </a>
-                <a href="#">
+                <a href="#buy">
                   <p>How to buy</p>
                 </a>
                 <a href="privacy.html">

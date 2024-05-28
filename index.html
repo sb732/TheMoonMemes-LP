@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -37,7 +39,10 @@
       <a href="#buy">
         <p>Buy</p>
       </a>
-      <button class="border px-6 py-4 rounded-2xl" id="connectButton">Connect Wallet</button>
+      <button class="border px-6 py-4 rounded-2xl" id="connectButton">
+        Connect Wallet
+        <span id="loading"><span>&bull;</span><span>&bull;</span><span>&bull;</span></span>
+      </button>
       <div class="flex gap-5 items-center">
         <a href="#">
           <img src="./assets/icons/Telegram App.svg" class="w-8 h-8" />
@@ -631,25 +636,7 @@
   <script>window.gtranslateSettings = { "default_language": "en", "languages": ["en", "fr", "de", "it", "es"], "wrapper_selector": ".gtranslate_wrapper" }</script>
   <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
-  <script>
-    const connectButton = document.getElementById("connectButton");
-
-    connectButton.addEventListener("click", () => {
-      if (typeof window.ethereum !== "undefined") {
-        console.log("MetaMask installed");
-
-        ethereum
-          .request({ method: "eth_requestAccounts" })
-          .then((accounts) => {
-            const account = accounts[0]
-
-            walletID.innerHTML = `Wallet connected: ${account}`;
-          })
-      } else {
-        window.open("https://metamask.io/download/", "_blank");
-      }
-    })
-  </script>
+  <script type="text/javascript" src="./assets/js/wallet.js"></script>
 
   <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 

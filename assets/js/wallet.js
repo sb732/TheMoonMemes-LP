@@ -1,8 +1,5 @@
 const connectButton = document.getElementById("connectButton");
 const walletID = document.getElementById("walletID");
-const reloadButton = document.getElementById("reloadButton");
-const installAlert = document.getElementById("installAlert");
-const mobileDeviceWarning = document.getElementById("mobileDeviceWarning");
 
 const startLoading = () => {
   connectButton.classList.add("loadingButton");
@@ -54,14 +51,11 @@ connectButton.addEventListener("click", () => {
       });
   } else {
     if (isMobile()) {
-      mobileDeviceWarning.classList.add("show");
+      alert(
+        "If you are on a mobile phone, please use MetaMask application's browser to connect."
+      );
     } else {
       window.open("https://metamask.io/download/", "_blank");
-      installAlert.classList.add("show");
     }
   }
-});
-
-reloadButton.addEventListener("click", () => {
-  window.location.reload();
 });

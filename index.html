@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+  style="background-color: black; background-image: url('./assets/background.png'); background-repeat: repeat-y; background-size: 100vw auto;"
+  class="font-['Knewave']">
+  <section class="relative flex flex-col text-white w-full bg-black mb-14">
+    <div class="absolute w-full hidden md:flex md:flex-row justify-around items-center text-2xl my-4">
+      <a href="#">
+        <img src="./assets/header.png" />
+      </a>
+      <a href="#home">
+        <p>Home</p>
+      </a>
+      <a href="#about">
+        <p>About</p>
+      </a>
+      <a href="#moonomics">
+        <p>Moonomics</p>
+      </a>
+      <a href="#roadmap">
+        <p>Roadmap</p>
+      </a>
+      <a href="#buy">
+        <p>Buy</p>
+      </a>
+      <button class="border px-6 py-4 rounded-2xl" id="connectButton">Connect Wallet</button>
+      <div class="flex gap-5 items-center">
+        <a href="#">
+          <img src="./assets/icons/Telegram App.svg" class="w-8 h-8" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/Twitter-X-Icon.svg" class="w-14 h-14" />
+        </a>
+      </div>
+    </div>
+    <div
+      class="absolute w-[calc(100%-16px)] flex md:hidden md:flex-row justify-between items-center text-2xl my-4 mx-2">
+      <img src="./assets/header.png" class="w-[60px] h-[60px]" />
+      <img src="./assets/icons/hamburger.svg" id="navToggleIcon" onclick="showNav()" class="z-[100] w-8 h-8" />
+    </div>
+
+    <div id="navBar"
+      class="flex items-center w-full justify-center duration-300 flex-col gap-[30px] fixed top-0 -left-full bg-Ivory h-screen z-50 bg-black md:hidden">
+      <a href="#home">
+        <p onclick="showNav()">Home</p>
+      </a>
+      <a href="#about">
+        <p onclick="showNav()">About</p>
+      </a>
+      <a href="#moonomics">
+        <p onclick="showNav()">Moonomics</p>
+      </a>
+      <a href="#roadmap">
+        <p onclick="showNav()">Roadmap</p>
+      </a>
+      <a href="#buy">
+        <p onclick="showNav()">Buy</p>
+      </a>
+      <button class="border px-6 py-4 rounded-2xl" onclick="showNav()" id="connectButton">Connect Wallet</button>
+      <div class="flex gap-5 items-center">
+        <a href="#">
+          <img src="./assets/icons/Telegram App.svg" class="w-8 h-8" onclick="showNav()" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/Twitter-X-Icon.svg" class="w-14 h-14" onclick="showNav()" />
+        </a>
+      </div>
+    </div>
+
+    <img src="./assets/home.png" class="w-auto h-[calc(100vh+40px)] mt-[-40px]" />
+  </section>
+
+  <div class="flex flex-col items-center justify-center gap-14 mx-2 lg:mx-0">
+    <div class="flex flex-col items-center justify-center gap-14 max-w-[1040px] text-white">
+      <section class="flex flex-col gap-5 items-center justify-center max-w-[732px]" id="home">
+        <p class="text-4xl text-center uppercase">
+          Memes on the Rise,<br class="block md:hidden" /> to the Moon We Fly
+        </p>
+        <img src="./assets/the-moon-memes-title.png" />
+        <p class="text-2xl text-center uppercase">
+          Join the future of meme culture with TheMoonMemes token. Embrace decentralized creativity and community.
+          Explore our lunar-inspired universe now!
+        </p>
+        <div class="flex flex-col md:flex-row text-white w-full justify-between pt-10 px-5 uppercase">
+          <a href="#">
+            <p class="text-center py-2 rounded-lg text-4xl mb-10 min-w-[250px] bg-[#BD00FF] border border-white">
+              Whitepaper
+            </p>
+          </a>
+          <a href="#">
+            <p class="text-center py-2 rounded-lg text-4xl mb-10 min-w-[250px] bg-[#FF4747] border border-white">
+              Audit
+            </p>
+          </a>
+        </div>
+        <img src="./assets/the-moon-memes-1.png" />
+      </section>
+
+      <section class="flex flex-col items-center gap-5" id="about">
+        <p
+          class="w-full md:w-auto text-6xl md:text-8xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover md:py-5 md:px-[200px]">
+          About
+        </p>
+        <div class="flex flex-col gap-5 md:gap-14">
+          <p class="text-xl md:text-3xl text-center">
+            At TheMoonMemes, we are more than just a token; we
+            <br class="hidden md:block" />
+            are a community-driven movement dedicated to
+            <br class="hidden md:block" />
+            revolutionizing the world of memes on the blockchain.
+            <br class="hidden md:block" />
+            Our journey began with a simple yet powerful idea: to
+            <br class="hidden md:block" />
+            bring humor and creativity to the decentralized
+            <br class="hidden md:block" />
+            universe.
+          </p>
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 flex flex-col gap-5">
+              <p class="text-3xl md:text-5xl text-center">Our Mission​</p>
+              <p>Our mission is to empower meme creators, enthusiasts, and crypto aficionados alike by merging the world
+                of
+                memes
+                with the limitless potential of blockchain technology. We believe that laughter and creativity should
+                have
+                no
+                bounds, and that's why we're taking memes to the moon and beyond.</p>
+            </div>
+            <div class="md:w-1/2">
+              <img src="./assets/our-mission.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center gap-5 mt-[-56px]">
+        <p
+          class="text-4xl md:text-6xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-5 md:py-10 md:px-20">
+          Why TheMoonMemes?
+        </p>
+        <div class="flex flex-col gap-5 md:gap-8">
+          <div
+            class="text-black bg-white rounded-lg py-2 pl-2 md:pl-5 pr-2 md:pr-52 flex items-center justify-between gap-5">
+            <div class="min-w-4 md:min-w-6 min-h-4 md:min-h-6 rounded-full bg-black"></div>
+            <p>Community-Centric: We are proud of our passionate
+              community, where
+              every member
+              has a voice. Together, we
+              shape
+              the future of meme culture.</p>
+          </div>
+          <div
+            class="text-black bg-white rounded-lg py-2 pl-2 md:pl-5 pr-2 md:pr-52 flex items-center justify-between gap-5">
+            <div class="min-w-4 md:min-w-6 min-h-4 md:min-h-6 rounded-full bg-black"></div>
+            <p>Innovation: We're not just following trends; we're
+              setting them. Our
+              unique
+              features and utility make us
+              stand
+              out in the crypto space.</p>
+          </div>
+          <div
+            class="text-black bg-white rounded-lg py-2 pl-2 md:pl-5 pr-2 md:pr-52 flex items-center justify-between gap-5">
+            <div class="min-w-4 md:min-w-6 min-h-4 md:min-h-6 rounded-full bg-black"></div>
+            <p>Transparency: Trust is the cornerstone of our
+              project. We operate
+              with complete
+              transparency, ensuring you're
+              always in the know.</p>
+          </div>
+          <div
+            class="text-black bg-white rounded-lg py-2 pl-2 md:pl-5 pr-2 md:pr-52 flex items-center justify-between gap-5">
+            <div class="min-w-4 md:min-w-6 min-h-4 md:min-h-6 rounded-full bg-black"></div>
+            <p>Lunar Inspiration: The moon has always been a symbol
+              of exploration
+              and
+              discovery. We draw inspiration from
+              its
+              mystique to fuel our creativity.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center gap-5">
+        <p
+          class="text-4xl md:text-6xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-5 md:py-10 md:px-20">
+          Our Mission and Vision​
+        </p>
+        <div class="flex flex-col items-center gap-5 md:gap-16">
+          <img src="./assets/our-mission-and-vision.png" />
+          <div class="relative flex flex-col gap-5">
+            <span
+              class="hidden md:block h-full w-[7px] bg-[#453377] absolute left-0 md:left-1/2 -translate-x-1/2 ms-[10px] md:ms-0">
+            </span>
+            <div class="flex flex-col-reverse md:flex-row items-center justify-around relative">
+              <span class="hidden md:block absolute w-[35%] h-[7px] bg-[#453377] left-[50%]  top-0">
+              </span>
+              <img src="./assets/our-mission-and-vision-0.png"
+                class="hidden md:block w-[120px] h-[120px] absolute left-[calc(50% - 60px)] top-[-60px]" />
+              <img src="./assets/our-mission-and-vision-1.png" />
+              <div class="md:w-2/5">
+                <p class="text-2xl md:text-3xl mb-5">Mission: Empowering Memes, Uniting Communities</p>
+                <p>Our mission is to empower meme culture by creating a cryptocurrency that brings communities together
+                  through
+                  humor, creativity, and inclusivity.</p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-around relative">
+              <span class="hidden md:block absolute w-[35%] h-[7px] bg-[#453377] left-[15%]  top-0">
+              </span>
+              <img src="./assets/our-mission-and-vision-0.png"
+                class="hidden md:block w-[120px] h-[120px] absolute left-[calc(50% - 60px)] top-[-60px]" />
+              <div class="md:w-2/5">
+                <p class="text-2xl md:text-3xl mb-5">Vision: A Memeverse of Possibilities</p>
+                <p>Our vision is to build a Memeverse—a digital universe where memes and crypto coexist harmoniously,
+                  fostering
+                  innovation, laughter, and positive change.</p>
+              </div>
+              <img src="./assets/our-mission-and-vision-2.png" />
+            </div>
+            <div class="flex flex-col-reverse md:flex-row items-center justify-around relative">
+              <span class="hidden md:block absolute w-[35%] h-[7px] bg-[#453377] left-[50%]  top-0">
+              </span>
+              <img src="./assets/our-mission-and-vision-0.png"
+                class="hidden md:block w-[120px] h-[120px] absolute left-[calc(50% - 60px)] top-[-60px]" />
+              <img src="./assets/our-mission-and-vision-3.png" />
+              <div class="md:w-2/5">
+                <p class="text-2xl md:text-3xl mb-5">Mission: Decentralized Expression and Fun</p>
+                <p>We are committed to enabling decentralized expression and fun, allowing everyone to participate in
+                  meme
+                  creation,
+                  sharing, and crypto adoption.</p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-around relative">
+              <span class="hidden md:block absolute w-[35%] h-[7px] bg-[#453377] left-[15%]  top-0">
+              </span>
+              <img src="./assets/our-mission-and-vision-0.png"
+                class="hidden md:block w-[120px] h-[120px] absolute left-[calc(50% - 60px)] top-[-60px]" />
+              <div class="md:w-2/5">
+                <p class="text-2xl md:text-3xl mb-5">Vision: Making Memes Matter</p>
+                <p>Our vision is to make memes matter by promoting social impact initiatives, NFT art, and
+                  community-driven
+                  projects, creating a lasting legacy in the meme world.</p>
+              </div>
+              <img src="./assets/our-mission-and-vision-4.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="border border-[3px] border-white rounded-2xl px-2 md:px-10 py-1 md:py-5 flex flex-col items-center gap-5 md:gap-10">
+        <p class="uppercase text-3xl md:text-6xl">Staking and Rewards</p>
+        <p class="text-center">
+          Stake Your Tokens, Reap the Benefits:<br />
+          At TheMoonMemes, we offer a robust staking system that allows our community members to earn rewards. By
+          staking your tokens, you can participate in securing the network and earn additional tokens as a reward.
+        </p>
+        <div class="w-full">
+          <p class="text-3xl mb-2">How It Works:</p>
+          <li>
+            Stake Your Tokens: Simply deposit your TheMoonMemes tokens into our staking platform.
+          </li>
+          <li>
+            Earn Rewards: As a staker, you will receive a share of the network’s transaction fees and newly minted
+            tokens.
+          </li>
+          <li>
+            Community Growth: Your participation helps grow and secure our community, making it stronger and more
+            resilient.
+          </li>
+        </div>
+        <div class="w-full">
+          <p class="text-3xl mb-2">Why Stake with TheMoonMemes?</p>
+          <li>
+            Passive Income: Earn regular rewards by staking your tokens.
+          </li>
+          <li>
+            Support the Network: Your staked tokens contribute to the stability and security of our network.
+          </li>
+          <li>
+            Exclusive Benefits: Stakers get access to exclusive community events, NFT drops, and more.
+          </li>
+        </div>
+        <img src="./assets/staking-and-rewards.png" />
+      </section>
+
+      <section id="moonomics" class="flex flex-col gap-2 md:gap-5 items-center justify-center">
+        <p
+          class="w-full md:w-auto uppercase text-4xl md:text-6xl text-center mb-5 bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-2 md:py-5 md:px-20">
+          Moonomics
+        </p>
+        <div class="flex flex-col md:flex-row">
+          <div class="tet-xs md:text-2xl">
+            <p class="mb-5">
+              Themoonmemes tokenomics include smart staking rewards, meaning you can earn right away.
+            </p>
+            <li>Presale: 15% (15,000,000,000 tokens)</li>
+            <li>Marketing: 10% (10,000,000,000 tokens)</li>
+            <li>Project Treasury: 25% (25,000,000,000 tokens)</li>
+            <li>Staking Rewards: 20% (20,000,000,000 tokens)</li>
+            <li>Exchange Liquidity: 15% (15,000,000,000 tokens)</li>
+            <li>Reserve/Future Use: 15% (15,000,000,000 tokens)</li>
+          </div>
+          <div class="min-w-[200px] grid grid-cols-2 md:grid-cols-1">
+            <li class="marker:text-[#9BB0FF] text-sm md:text-base">PRESALE <p class="text-2xl ml-5">15%</p>
+            </li>
+            <li class="marker:text-[#FDD64B] text-sm md:text-base">MARKETING <p class="text-2xl ml-5">10%</p>
+            </li>
+            <li class="marker:text-[#9E28FA] text-sm md:text-base">TREASURY <p class="text-2xl ml-5">25%</p>
+            </li>
+            <li class="marker:text-[#8FF929] text-sm md:text-base">STAKING <p class="text-2xl ml-5">20%</p>
+            </li>
+            <li class="marker:text-[#F8C9FF] text-sm md:text-base">LIQUIDITY <p class="text-2xl ml-5">15%</p>
+            </li>
+            <li class="marker:text-[#5E3967] text-sm md:text-base">RESERVE/FUTURE USE <p class="text-2xl ml-5">15%</p>
+            </li>
+          </div>
+        </div>
+        <img src="./assets/moonomics.png" />
+        <p class="text-center">TheMoonMemes Token Address</p>
+        <div class="flex items-center justify-center">
+          <a href="https://etherscan.io/token/0x11fBf29e443466dc714362DbDf95694b74727DC2" target="_blank">
+            <p class="hidden md:block">0x11fBf29e443466dc714362DbDf95694b74727DC2</p>
+            <p class="block md:hidden">0x11f.....27DC2</p>
+          </a>
+          <button>
+            <img src="./assets/icons/Copy Address.svg" />
+          </button>
+        </div>
+      </section>
+
+      <section class="text-xl w-full flex items-stretch" id="roadmap">
+        <div
+          style="background-image: url('./assets/roadmap-vertical.png'); background-repeat: repeat-y; background-size: 153px auto;"
+          class="min-w-[153px] hidden lg:block"></div>
+        <div class="w-full">
+          <p
+            class="text-6xl md:text-8xl text-center mb-5 md:mb-20 bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover md:py-5 md:px-20">
+            Roadmap</p>
+          <div class="flex flex-col gap-5">
+            <div>
+              <p class="text-center md:text-left">Phase 1: Conceptualization and Planning</p>
+              <div class="flex gap-2">
+                <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                <p>Define Themoonmeme token's purpose<br class="hidden md:block" /> and utility.</p>
+              </div>
+              <div class="flex gap-2">
+                <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                <p>Establish tokenomics and assemble<br class="hidden md:block" /> team.</p>
+              </div>
+            </div>
+            <div class="flex md:justify-end">
+              <div>
+                <p class="text-center md:text-left">Phase 2: Token Development</p>
+                <div class="flex gap-2">
+                  <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                  <p>Create and audit Themoonmeme token<br class="hidden md:block" /> smart contract.</p>
+                </div>
+                <div class="flex gap-2">
+                  <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                  <p>Develop user
+                    interface for
+                    token<br class="hidden md:block" /> transactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="text-center md:text-left">
+                Phase 3: Community Building and Marketing
+              </p>
+              <div class="flex gap-2">
+                <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                <p>Launch website and social channels.</p>
+              </div>
+              <div class="flex gap-2">
+                <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                <p>Conduct pre-sale, engage with community,<br class="hidden md:block" /> and execute
+                  marketing
+                  campaigns.
+                </p>
+              </div>
+            </div>
+            <div class="flex md:justify-end">
+              <div>
+                <p class="text-center md:text-left">
+                  Phase 4: Exchange Listings and Continued<br class="hidden md:block" /> Development
+                </p>
+                <div class="flex gap-2">
+                  <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                  <p>List on exchanges for liquidity.</p>
+                </div>
+                <div class="flex gap-2">
+                  <p class="min-w-2 h-2 rounded-full bg-white mt-3"></p>
+                  <p>Gather feedback for improvements and<br class="hidden md:block" /> explore partnerships.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url('./assets/roadmap-horizontal.png'); background-repeat: repeat-x;"
+            class="min-h-[153px] w-full my-20 hidden md:block"></div>
+        </div>
+        <div
+          style="background-image: url('./assets/roadmap-vertical.png'); background-repeat: repeat-y; background-size: 153px auto;"
+          class="min-w-[153px] hidden lg:block"></div>
+      </section>
+
+      <section class="flex flex-col items-center gap-5 md:gap-10" id="buy">
+        <p
+          class="w-full md:w-auto text-6xl md:text-8xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-2 md:py-10 md:px-32">
+          How to buy</p>
+        <div class="flex flex-col gap-5 md:gap-10">
+          <div class="flex flex-col md:flex-row items-center bg-white text-black rounded-lg px-5 py-1">
+            <p class="text-2xl md:text-3xl min-w-[300px]">1. Get a Wallet:</p>
+            <p>Start by setting up a secure Ethereum (ETH) wallet, like MetaMask or Trust Wallet, and ensure it's funded
+              with
+              ETH.</p>
+          </div>
+          <div class="flex flex-col md:flex-row items-center bg-white text-black rounded-lg px-5 py-1">
+            <p class="text-2xl md:text-3xl min-w-[300px]">2. Visit a Exchange:​</p>
+            <p>On the exchange, Go to a reputable cryptocurrency exchange that lists TheMoonMemes token, such as Binance
+              or
+              Coinbase.locate TheMoonMemes token and place a buy order. Specify the amount of ETH you want to spend.  
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row items-center bg-white text-black rounded-lg px-5 py-1">
+            <p class="text-2xl md:text-3xl min-w-[300px]">3. Place an Order:​</p>
+            <p>On the exchange, locate TheMoonMemes token and place a buy order. Specify the amount of ETH you want to
+              spend.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row items-center bg-white text-black rounded-lg px-5 py-1">
+            <p class="text-2xl md:text-3xl min-w-[300px]">4. Confirm :​</p>
+            <p>Once your order is filled, your TheMoonMemes tokens will be in your exchange wallet. For added security,
+              consider transferring them to your private Ethereum wallet.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="flex flex-col gap-10">
+        <p class="text-center text-4xl rounded-lg border-4 py-5">Frequently Asked Questions (FAQs)</p>
+        <div class="md:text-4xl">
+          <div class="relative mb-3">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center justify-between w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 rounded-t-1 group"
+                data-collapse-target="animated-collapse-1">
+                <span>What is TheMoonMemes token?</span>
+                <img src="./assets/down-button.png"
+                  class="group-open:rotate-180 transition-transform w-[30px] md:w-[60px]" />
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-1"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 leading-normal text-blue-gray-500/80">
+                TheMoonMemes token is a cryptocurrency built on the Ethereum network, often associated with meme
+                culture.
+              </div>
+            </div>
+          </div>
+
+          <div class="relative mb-3">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center justify-between w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 rounded-t-1 group"
+                data-collapse-target="animated-collapse-2">
+                <span>How can I buy TheMoonMemes token?</span>
+                <img src="./assets/down-button.png"
+                  class="group-open:rotate-180 transition-transform w-[30px] md:w-[60px]" />
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-2"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 leading-normal text-blue-gray-500/80">
+                Buy TheMoonMemes token by using Ethereum (ETH) on a supported cryptocurrency exchange.
+              </div>
+            </div>
+          </div>
+
+          <div class="relative mb-3">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center justify-between w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 rounded-t-1 group"
+                data-collapse-target="animated-collapse-3">
+                <span>Is TheMoonMemes token a good investment?</span>
+                <img src="./assets/down-button.png"
+                  class="group-open:rotate-180 transition-transform w-[30px] md:w-[60px]" />
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-3"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 leading-normal text-blue-gray-500/80">
+                Cryptocurrency investments are risky; consider your financial goals and do thorough research before
+                investing.
+              </div>
+            </div>
+          </div>
+
+          <div class="relative mb-3">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center justify-between w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 rounded-t-1 group"
+                data-collapse-target="animated-collapse-4">
+                <span>Where can I store TheMoonMemes tokens?</span>
+                <img src="./assets/down-button.png"
+                  class="group-open:rotate-180 transition-transform w-[30px] md:w-[60px]" />
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-4"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 leading-normal text-blue-gray-500/80">
+                Store your tokens in a secure Ethereum wallet like MetaMask or Trust Wallet for added safety.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="flex flex-col items-center gap-10 w-full text-white">
+      <p
+        class="w-full md:w-auto text-4xl md:text-8xl text-center bg-[url('./assets/title-background.png')] bg-no-repeat bg-cover py-5 lg:py-10 lg:px-32">
+        TheMoonMemes
+      </p>
+      <div class="flex flex-col items-center gap-10 relative w-full">
+        <img src="./assets/the-moon-memes-3.png" class="absolute top-[0px] w-full" />
+
+        <div style="background-image: url('./assets/the-moon-memes-4.png');background-size: cover;"
+          class="pt-[200px] md:pt-[600px] z-[10] px-2 md:px-20 flex flex-col items-center gap-5 md:gap-10 lg:min-h-[1070px] pb-20 w-full">
+          <div class="w-full flex flex-col gap-5 md:gap-10 md:flex-row justify-around">
+            <div>
+              <img src="./assets/footer.png" class="mt-[-50px] md:mt-[-100px]" />
+            </div>
+            <div class="flex justify-around underline gap-5 md:gap-10">
+              <div class="hidden md:block">
+                <a href="#">
+                  <p>Home</p>
+                </a>
+                <a href="#">
+                  <p>About</p>
+                </a>
+                <a href="#">
+                  <p>Mission & Vision</p>
+                </a>
+                <a href="#">
+                  <p>Moonomics</p>
+                </a>
+                <a href="#">
+                  <p>Roadmap</p>
+                </a>
+                <a href="#">
+                  <p>How to buy</p>
+                </a>
+              </div>
+              <div class="hidden md:block">
+                <a href="privacy.html">
+                  <p>Privacy & Policy</p>
+                </a>
+                <a href="terms.html">
+                  <p>Terms & Conditions</p>
+                </a>
+              </div>
+              <div class="block md:hidden">
+                <a href="#">
+                  <p>Home</p>
+                </a>
+                <a href="#">
+                  <p>About</p>
+                </a>
+                <a href="#">
+                  <p>Mission & Vision</p>
+                </a>
+                <a href="#">
+                  <p>Moonomics</p>
+                </a>
+              </div>
+              <div class="block md:hidden">
+                <a href="#">
+                  <p>Roadmap</p>
+                </a>
+                <a href="#">
+                  <p>How to buy</p>
+                </a>
+                <a href="privacy.html">
+                  <p>Privacy & Policy</p>
+                </a>
+                <a href="terms.html">
+                  <p>Terms & Conditions</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-5 md:gap-10 md:flex-row justify-around">
+            <p class="text-xs">
+              Risk Warning: cryptocurrency may be unregulated in your jurisdiction.<br class="hidden md:block" />
+              The value of cryptocurrency may go
+              down as well as up. Profits may be<br class="hidden md:block" />
+              subject to capital gains or other taxes applicable in your jurisdiction.
+            </p>
+            <p class="text-center md:text-inherit">
+              Contact Us: theMoon@memes.com
+            </p>
+          </div>
+          <div class="absolute bottom-5 mt-5 md:mt-10 flex justify-center">
+            <p class="text-xs">Copyrights 2024. ThMoonMemes Token. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="gtranslate_wrapper"></div>
+  <script>window.gtranslateSettings = { "default_language": "en", "languages": ["en", "fr", "de", "it", "es"], "wrapper_selector": ".gtranslate_wrapper" }</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+  <script>
+    const connectButton = document.getElementById("connectButton");
+
+    connectButton.addEventListener("click", () => {
+      if (typeof window.ethereum !== "undefined") {
+        console.log("MetaMask installed");
+
+        ethereum
+          .request({ method: "eth_requestAccounts" })
+          .then((accounts) => {
+            const account = accounts[0]
+
+            walletID.innerHTML = `Wallet connected: ${account}`;
+          })
+      } else {
+        window.open("https://metamask.io/download/", "_blank");
+      }
+    })
+  </script>
+
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
+  <script>
+    // NAVBAR START HERE
+    function showNav() {
+      var navBar = document.getElementById("navBar");
+      document.getElementById("navBar").classList.toggle("!left-0");
+      var navToggleIcon = document.getElementById("navToggleIcon");
+      document.body.classList.toggle("!overflow-y-hidden");
+      document.body.classList.toggle("!h-screen");
+      navBar.classList.toggle("showNav");
+      navToggleIcon.src = navBar.classList.contains("showNav")
+        ? "./assets/icons/menu-cross.svg"
+        : "./assets/icons/hamburger.svg";
+    }
+  </script>
+</body>
+
+</html>

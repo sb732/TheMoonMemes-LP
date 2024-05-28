@@ -50,14 +50,18 @@
       </div>
     </div>
     <div
-      class="absolute w-[calc(100%-16px)] flex md:hidden md:flex-row justify-between items-center text-2xl my-4 mx-2">
-      <img src="./assets/header.png" class="w-[60px] h-[60px]" />
-      <button class="border px-6 py-4 rounded-2xl" id="mobileConnectButton">Connect Wallet</button>
-      <img src="./assets/icons/hamburger.svg" id="navToggleIcon" onclick="showNav()" class="z-[100] w-8 h-8" />
+      class="absolute w-[calc(100%-16px)] flex md:hidden md:flex-row justify-between items-center text-2xl mx-2 mt-4">
+      <div class="flex">
+        <img src="./assets/icons/hamburger.svg" id="navToggleIcon" onclick="showNav()" class="w-10 h-10 mr-5" />
+        <img src="./assets/header.png" class="w-[40px] h-[40px]" />
+      </div>
+      <button class="text-sm border px-3 py-2 rounded-2xl" id="mobileConnectButton">Connect Wallet</button>
     </div>
 
     <div id="navBar"
       class="flex items-center w-full justify-center duration-300 flex-col gap-[30px] fixed top-0 -left-full bg-Ivory h-screen z-50 bg-black md:hidden">
+      <img src="./assets/icons/menu-cross.svg" id="navToggleIcon" onclick="showNav()"
+        class="w-10 h-10 absolute top-4 right-4" />
       <a href="#home">
         <p onclick="showNav()">Home</p>
       </a>
@@ -73,6 +77,7 @@
       <a href="#buy">
         <p onclick="showNav()">Buy</p>
       </a>
+
       <div class="flex gap-5 items-center">
         <a href="#">
           <img src="./assets/icons/Telegram App.svg" class="w-8 h-8" onclick="showNav()" />
@@ -83,7 +88,7 @@
       </div>
     </div>
 
-    <img src="./assets/home.png" class="w-auto md:h-[calc(100vh+40px)] mt-[-40px]" />
+    <img src="./assets/home.png" class="w-auto md:h-[calc(100vh+40px)] mt-[60px] md:mt-[-40px]" />
   </section>
 
   <div class="flex flex-col items-center justify-center gap-14 mx-2 lg:mx-0">

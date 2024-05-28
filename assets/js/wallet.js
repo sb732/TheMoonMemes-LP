@@ -1,4 +1,5 @@
-const connectButton = document.getElementById("connectButton");
+const desktopConnectButton = document.getElementById("desktopConnectButton");
+const mobileConnectButton = document.getElementById("mobileConnectButton");
 
 const isMobile = () => {
   let check = false;
@@ -18,7 +19,7 @@ const isMobile = () => {
   return check;
 };
 
-connectButton.addEventListener("click", () => {
+desktopConnectButton.addEventListener("click", () => {
   if (typeof window.ethereum !== "undefined") {
     ethereum
       .request({ method: "eth_requestAccounts" })
@@ -27,7 +28,34 @@ connectButton.addEventListener("click", () => {
 
         const address = account.slice(0, 5) + "....." + account.slice(-5);
 
-        connectButton.innerHTML = `${address}`;
+        desktopConnectButton.innerHTML = `${address}`;
+      })
+      .catch((error) => {
+        console.log(error, error.code);
+
+        alert(error.code);
+      });
+  } else {
+    if (isMobile()) {
+      alert(
+        "If you are on a mobile phone, please use MetaMask application's browser to connect."
+      );
+    } else {
+      window.open("https://metamask.io/download/", "_blank");
+    }
+  }
+});
+
+mobileConnectButton.addEventListener("click", () => {
+  if (typeof window.ethereum !== "undefined") {
+    ethereum
+      .request({ method: "eth_requestAccounts" })
+      .then((accounts) => {
+        const account = accounts[0];
+
+        const address = account.slice(0, 5) + "....." + account.slice(-5);
+
+        mobileConnectButton.innerHTML = `${address}`;
       })
       .catch((error) => {
         console.log(error, error.code);
